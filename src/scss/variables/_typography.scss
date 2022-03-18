@@ -1,0 +1,21 @@
+//
+// Variables
+//
+
+// Override Bootstrap typography variables
+
+$font-family-base: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Yanone Kaffeesatz", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 800;
+
+$headings-color: $gray400;
+
+$h1-font-size: 6rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2rem;

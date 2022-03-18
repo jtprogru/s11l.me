@@ -1,0 +1,44 @@
+{
+    "title": "landing",
+    "name": "s11l.me",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "pdf": "node scripts/render-pdf.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "homepage": "https://s11l.me",
+    "license": "MIT",
+    "author": "Michael Savin",
+    "contributors": [
+        "Michael Savin (https://s11l.me/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jtprogru/s11l.me.git"
+    },
+    "dependencies": {
+      "bootstrap": "5.1.3"
+    },
+    "devDependencies": {
+        "@iconify-icons/cib": "1.2.2",
+        "autoprefixer": "10.4.4",
+        "browser-sync": "2.27.9",
+        "engine.io": "6.1.3",
+        "chokidar": "3.5.3",
+        "concurrently": "7.0.0",
+        "postcss": "8.4.12",
+        "prettier": "2.6.0",
+        "pug": "3.0.2",
+        "sass": "1.49.9",
+        "shelljs": "0.8.5",
+        "upath": "2.0.1"
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: $personal;
+    color: $grayc;
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: lowercase;
+    padding-top: 120px;
+}
+
+h1 {
+    color: $grayc;
+    line-height: 1;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+p {
+    color: $graya;
+    font-size: 1rem;
+}
+
+a {
+    color: $graya;
+}
+
+a:hover {
+    color: $grayf;
+}
+
