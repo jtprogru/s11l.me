@@ -27,7 +27,7 @@ html(lang='en')
                     b SRE / DevOps / CloudOps
             .text-center.mt-5
                 p.lead
-                    a(href='https://savinmi.ru', target="_blank").mb-2
+                    a(href='/cv.html', target="_blank").mb-2
                         | @cv
                     ||
                     a(href='https://www.linkedin.com/in/jtprogru', target="_blank").mb-2
@@ -53,6 +53,301 @@ html(lang='en')
                     ||
                     a(href='https://t.me/michael_behind_lens', target="_blank").mb-2
                         | @michael_behind_lens
+
+        .container#content
+
+            // Skills
+            section#skills
+                .container
+                    h2.mb-3.mt-2 Skills
+                    .subheading.mb-2
+                        | Programming language & Tools & Practice
+                    p.lead.mb-2
+                        | Here are all the technologies that I have worked with and that I can confidently use in my work.
+                    ul.fa-ul.mb-5
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Cloud providers:
+                            | <span class="iconify" data-icon="fa-brands:yandex-international" data-inline="false"></span> Yandex.Cloud,
+                            | <span class="iconify" data-icon="simple-icons:digitalocean" data-inline="false"></span> DigitalOcean
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b OS:
+                            | <span class="iconify" data-icon="cib:ubuntu" data-inline="false"></span> Ubuntu,
+                            | <span class="iconify" data-icon="cib:debian" data-inline="false"></span> Debian,
+                            | <span class="iconify" data-icon="cib:centos" data-inline="false"></span> CentOS,
+                            | <span class="iconify" data-icon="cib:redhat" data-inline="false"></span> RHEL
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Configuration managment:
+                            | <span class="iconify" data-icon="cib:ansible" data-inline="false"></span> Ansible,
+                            | <span class="iconify" data-icon="cib:saltstack" data-inline="false"></span> SaltStack
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Version control:
+                            | <span class="iconify" data-icon="cib:gitlab" data-inline="false"></span> GitLab,
+                            | <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span> GitHub,
+                            | <span class="iconify" data-icon="fa:bitbucket" data-inline="false"></span> Bitbucket
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Task management:
+                            | <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span> GitHub Projects,
+                            | <span class="iconify" data-icon="mdi:jira" data-inline="false"></span> Jira,
+                            | <span class="iconify" data-icon="ci:trello" data-inline="false"></span> Trello
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Monitoring:
+                            | <span class="iconify" data-icon="simple-icons:prometheus" data-inline="false"></span> Prometheus,
+                            | <span class="iconify" data-icon="cib:grafana" data-inline="false"></span> Grafana,
+                            | Zabbix
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Documentation:
+                            | <span class="iconify" data-icon="cib:confluence" data-inline="false"></span> Confluence,
+                            | <span class="iconify" data-icon="cib:gitlab" data-inline="false"></span> GitLab /
+                            | <span class="iconify" data-icon="cib:github" data-inline="false"></span> GitHub Wiki,
+                            | <span class="iconify" data-icon="cib:notion" data-inline="false"></span> Notion
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Virtualisation:
+                            | <span class="iconify" data-icon="cib:proxmox" data-inline="false"></span> Proxmox,
+                            | <span class="iconify" data-icon="carbon:logo-vmware" data-inline="false"></span> VMware
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Programming:
+                            | <span class="iconify" data-icon="bx:bxl-python" data-inline="false"></span> Python,
+                            | <span class="iconify" data-icon="cib:go" data-inline="false"></span> Go,
+                            | <span class="iconify" data-icon="mdi:bash" data-inline="false"></span> Bash,
+                            | <span class="iconify" data-icon="cib:php" data-inline="false"></span> PHP
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            b Practice:
+                            | DevOps/DevSecOps, DocOps, IaC, ChatOps
+
+                    .subheading.mb-2 Language skills
+                    ul.fa-ul.mb-5
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Russian - Native
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | English - A2
+
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-3.mt-0 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 SRE
+                            .subheading.mb-3
+                                a(href='https://bank.yandex.ru', target="_blank").mb-2 "Yandex.Bank"
+                            p.lead
+                                | I am building a fintech infrastructure in Yandex.Bank.
+                            p
+                                | Ansible, Terraform, Yandex.Cloud, Python, Go
+                        .flex-shrink-0
+                            span.text-secondary March 2022 - current time
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 SRE
+                            .subheading.mb-3
+                                a(href='https://vk.company/ru/', target="_blank").mb-2 "VK" (earlier Mail.ru Group)
+                            p.lead
+                                | Worked on the project "Search". Reduced the total number of errors made when working with the SaltStack repository by adding various kinds of checks for SaltStack. Cleaned the infrastructure repository from linter errors - >10k "HIGH" level errors in >3k SLS files. Globally, a lot of internal self-written products are used, the names of which do not leave the company. The total number of servers in the area of responsibility of the SRE team is 5000 bare-metal servers. Bare-metal infrastructure. LXC, Docker and self-written services are also used. He was engaged in the support of high-load services within the framework of the project.
+                            p
+                                | SaltStack, Python, Linux, Gitlab CI
+                        .flex-shrink-0
+                            span.text-secondary March 2021 - February 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 DevOps
+                            .subheading.mb-3 NDA
+                            p.lead
+                                | Project work. Helped the development team in the refinement and optimization of CI/CD. Moved the project from its own bare-metal infrastructure to DigitalOcean Managed Kubernetes. Designed and deployed the Production contour in DigitalOcean using Terraform. The configuration of servers and services was implemented using Ansible. All automation developments are left to the development team.
+                            p
+                                | Ansible, Prometheus, Grafana, Gitlab CI
+                        .flex-shrink-0
+                            span.text-secondary January 2021 - July 2021
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Senior System Administrator
+                            .subheading.mb-3
+                                a(href="http://advwe.com", target="_blank") "ADV" LLC
+                            p.lead
+                                | Implemented practices for documenting processes/changes/configurations, as well as updated project documentation. Implemented the IAC methodology. Implemented a template repository with a description of the infrastructure for a typical e-comm project of the company on Ansible and the "buttons" to launch automation via GitLab CI. Designed and launched the project infrastructure <a href="http://sammybeauty.ru ", target="_blank">"SammyBeauty"</a>. The platform withstood about 75k unique users and more than 225rps in the first hour of launch. He single-handedly implemented the "Big-Green-Button" internal project: a template repository with ansible playbooks and roles (roles are stored in the internal GitLab and connected as dependencies via Galaxy) to deploy projects similar to the above from scratch. The deployment takes place by "pressing a button in the web interface" of GitLab. Implemented Terraform to manage virtual machines on the Proxmox internal virtualization system.
+                            p
+                                | Ansible/Terraform, Zabbix/Prometheus, Grafana, Gitlab CI
+                        .flex-shrink-0
+                            span.text-secondary October 2019 - February 2021
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Senior Linux Systems Support Engineer
+                            .subheading.mb-3
+                                a(href='http://7pro.ru', target="_blank").mb-2  "SevenPro" LLC / "RegionCom" LLC
+                            p.lead
+                                | Supported the infrastructure of state and commercial companies. The total number of servers supported is >2000 servers. Troubleshooting CentOS 6.x/7.x. Work with hardware load balancers, as well as with ITU CheckPoint. Implemented MITM at the infrastructure level of one large project. I wrote automation for automatic opening/closing of applications in Jira based on triggers in <a href="https://github.com/jtprogru/zbx2jira">Zabbix</a>. The craft is still actively used and working.
+                            p
+                                | Zabbix, Grafana, Linux, Git, Gitlab, Python,
+                        .flex-shrink-0
+                            span.text-secondary June 2018 - October 2019
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 System Administrator
+                            .subheading.mb-3
+                                a(href='http://webkontrol.com', target="_blank").mb-2 "WebKontrol" LLC
+                            p.lead
+                                | Maintaining the operability of the company's infrastructure. Direct interaction with the development team. Implementation of the Gmail mail service by G-Suite Enterprise subscription. Setting up a monitoring system based on Zabbix 3.4. Maintenance of 62 servers, 54 of which are located in Hetzner (the entire production plus test benches). Maintenance and monitoring of file storage based on GlusterFS with a total volume of 30 TB. Configuration/maintenance/monitoring of multiple hosts using DRBD. Maintaining documentation in Wiki (Gitlab). Storing server configurations in Gitlab. Minimal maintenance of MySQL/PostgreSQL/MS SQL/Redis DBMS. Search for infrastructure bottlenecks and constant modernization.
+                        .flex-shrink-0
+                            span.text-secondary January 2018 - June 2018
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 System Administrator
+                            .subheading.mb-3
+                                a(href='https://www.moireis.ru/', target="_blank").mb-2 CJSC "ALLIANCE-TRAVEL"
+                            p.lead
+                                | The fleet consists of more than 100 cars. The main activity is maintaining the operability of the company's infrastructure. Data Backup (Bacula). Maintenance of the VMware ESXi virtualization cluster. Maintenance of Active Directory servers (Windows Server 2003-2012). Maintenance of servers based on CentOS 5/6/7 (approximate list of services: proxy, reverse proxy, internal and external web services, backup server). Databases MySQL, PostgreSQL, Oracle, MSSQL. Maintenance of active Cisco/Mikrotik network equipment.
+                        .flex-shrink-0
+                            span.text-secondary August 2017 - January 2018
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 System Administrator
+                            .subheading.mb-3 LLC "I-group"
+                            p.lead
+                                | Project work. Completely designed the entire office infrastructure of the company. Provided a complete set of documentation: regulations, job descriptions, user and administrator manuals.
+                        .flex-shrink-0
+                            span.text-secondary April 2017 - June 2017
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Assistant System Administrator / System Administrator / Head of IT Department
+                            .subheading.mb-3.mb-2 LLC "Argosy Analytics"
+                            p.lead
+                                | He worked his way up from an assistant system administrator to the head of the IT department. The fleet consists of more than 400 machines. The main activity is maintaining the working capacity of employees' workplaces. Data backup. Deployment of virtualization servers (VMware). Deployment of mail servers (Ubuntu Server 14.04+Postfix+iRedMail). Creating file storages (Ubuntu Server 14.04; Windows Server 2012). Maintenance of Active Directory servers (Windows Server 2003-2012).
+                        .flex-shrink-0
+                            span.text-secondary May 2014 - March 2017
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-3.mt-0 Education
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 SSTU named after Yuri Gagarin
+                            .subheading.mb-3 Software Engineer
+                            div.mb-4 Applied Informatics and Technologies - Information Systems and Technologies
+                        .flex-shrink-0
+                            span.text-secondary August 2007 - May 2008
+
+            hr.m-0
+
+            // Interests
+            section#interests.resume-section
+                .resume-section-content
+                    h2.mb-3.mt-0 Interests
+                    p.lead.mb-4
+                        | I am constantly developing in my professional field. I am learning new things by the example of solving practical problems. I am also engaged in raising my son and have some activity on the Internet.
+                    p.lead.mb-4
+                        | I'm running my blog <a href="https://jtprog.ru", target="_blank"><b>jtprog.ru</b></a> as a notebook. Sometimes I write down everything there that may be interesting not only to me in the format of compressed "instructions for action". I also have a channel in Telegram <a href="https://t.me/jtprogru_channel", target="_blank"><b>Savin Michael aka @jtprogru</b></a>, in which, in addition to links to my articles, I publish mini notes on hard and soft skills.
+                    p.lead.mb-4
+                        | Sometimes I write all sorts of crafts in Python – for example, this thing: <a href="https://github.com/jtprogru/zbx2jira", target="_blank"><b>zbx2jira</b></a>, or on Golang - for example this thing: <a href="https://github.com/jtprogru/go-monkill", target="_blank"><b>go-monkill</b></a>. I use automation based on GitHub Actions for my projects.
+                    p.lead.mb-0
+                        | I have been fond of mobile photography for a long time, but only recently decided to put it on public display in the Telegram channel <a href="https://t.me/michael_behind_lens", target="_blank"><b>Michael behind lens</b></a> and into his <a href="https://www.instagram.com/jtprogru/", target="_blank">Instagram</a>.
+
+            hr.m-0
+
+            // Awards
+            section#awards.resume-section
+                .resume-section-content
+                    h2.mb-3.mt-0 Awards
+                    p.lead.mb-3
+                        | Sometimes I go through something - some course that I find interesting. Here is a list of those courses and certifications that I have passed.
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://intuit.ru/verifydiplomas/101471364", target="_blank").lead
+                                | Linux OS Admninistration
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://learn.epam.com/detailsPage?id=601f195a-d408-4439-a16d-0630ed2a412e", target="_blank").lead
+                                | Version Control with Git
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/100880600", target="_blank").lead
+                                | Linux OS
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/00215146", target="_blank").lead
+                                | Basics of local networks
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/100880577", target="_blank").lead
+                                | Risk analysis and management in IS based on Microsoft Windows OS
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/00178706", target="_blank").lead
+                                | Basics of JavaScript
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/00181746", target="_blank").lead
+                                | Basics of CSS
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="http://www.intuit.ru/verifydiplomas/100880561", target="_blank").lead
+                                | Information technology in management (Certification)
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://www.datacamp.com/courses/free-introduction-to-r", target="_blank").lead
+                                | Introduction to R
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://www.intuit.ru/verifydiplomas/101068636", target="_blank").lead
+                                | Information security
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://www.intuit.ru/verifydiplomas/100907833", target="_blank").lead
+                                | Network Security
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text
+                            a(href="https://slurm.io/kubernetes-baza", target="_blank").lead
+                                | "Slurm-2": Intensive Kubernetes administration
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
