@@ -5,56 +5,239 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
+        meta(name='description', content='CV')
         meta(name='author', content='Michael Savin')
 
         title Michael Savin
 
         // Favicon
-        link(rel='icon', type='image/svg', href='assets/img/favicon.svg')
+        link(rel='icon', type='image/png', href='assets/img/favicon.png')
+
+        //- script(src="https://use.fontawesome.com/releases/v5.15.3/js/all.js", crossorigin="anonymous")
+        script(src="https://code.iconify.design/1/1.0.7/iconify.min.js", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;800&amp;family=Yanone+Kaffeesatz:wght@400;600;800&amp;display=swap", rel="stylesheet", type="text/css")
 
         // Core theme CSS (includes Bootstrap)
+        //- link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css")
         link(href='css/styles.css', rel='stylesheet')
-
     body
-
-        // Page content
-        .container
-            .text-center.mt-5
+        // Page Header
+        .container#header.mt-3
+            .text-left.mt-3
                 h1
-                    b Michael Savin
-                p.lead
-                    b SRE / DevOps / CloudOps
-            .text-center.mt-5
-                p.lead
-                    a(href='https://savinmi.ru', target="_blank").mb-2
-                        | @cv
-                    ||
-                    a(href='https://www.linkedin.com/in/jtprogru', target="_blank").mb-2
-                        | @linkedin
-                    ||
-                    a(href='https://t.me/jtprogru', target="_blank").mb-2
-                        | @telegram
-                    ||
-                    a(href='https://github.com/jtprogru', target="_blank").mb-2
-                        | @github
-                    ||
-                    a(href='https://twitter.com/jtprogru', target="_blank").mb-2
-                        | @twitter
-                    ||
-                    a(href='https://jtprog.ru', target="_blank").mb-2
-                        | @blog
-                p.lead
-                    a(href='https://t.me/jtprogru_chat', target="_blank").mb-2
-                        | @jtprogru_chat
-                    ||
-                    a(href='https://t.me/jtprogru_channel', target="_blank").mb-2
-                        | @jtprogru_channel
-                    ||
-                    a(href='https://t.me/michael_behind_lens', target="_blank").mb-2
-                        | @michael_behind_lens
+                    | Michael
+                    span.text-family Savin
 
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-        // Scripts
-        script(src='js/scripts.js')
+                p.lead.mt-2
+                    ||
+                    a(href='https://www.linkedin.com/in/jtprogru', target="_blank").mb-2 LinkedIn
+                    ||
+                    a(href='mailto:mail@jtprog.ru', target="_blank").mb-2 Email
+                    ||
+                    a(href='https://github.com/jtprogru', target="_blank").mb-2 GitHub
+                    ||
+                    a(href='https://t.me/jtprogru', target="_blank").mb-2 Telegram
+                    ||
+
+            hr.mt-5
+        // Page content
+        .container#content.mt-5
+            // Section with Bio
+            .text-left#bio
+                h2.mb-3 Bio
+                p.mb-2
+                    | I have a rich and versatile experience in the role of <b>Infrastructure Engineer</b>, <b>SRE</b>, <b>Linux administrator</b>, <b>Head of IT Department and System Administration Department</b>.
+                p.mb-2
+                    | I was born and raised in a small village, and now my work helps millions of users.
+                p.mb-2
+                    | I am looking for interesting tasks in the direction of RnD: to sort out an incomprehensible bug, to bring a "cool thing" to a team that has not been used before, or to write some kind of "life simplifier". I try to automate everything that requires it, and I try to use Ansible as an automation tool. In an ideal world, I want to work with GitHub and GitHub Actions, and use Issues as a task tracker.
+                p.mb-2
+                    | You can contact me with a job offer or for advice on any issues related to my interests or my experience.
+                p.mb-2
+                    | For communication, write to Telegram: <b><a href="https://t.me/jtprogru">@jtprogru</a></b> or via alternative communication channels.
+            hr.mt-5
+            // Section with Skills
+            .text-left#skills
+                h2.mb-3 Skills
+                p.lead.mb-2
+                    | Here are all the technologies that I have worked with and that I can confidently use in my work.
+                .row
+                    .col
+                        li
+                            b Cloud providers:
+                            | Yandex.Cloud, DigitalOcean
+                        li
+                            b OS:
+                            | Ubuntu, Debian, CentOS, RHEL
+                        li
+                            b Configuration managment:
+                            | Ansible, Terraform, SaltStack
+                        li
+                            b Version control:
+                            | GitLab, GitHub, Bitbucket
+                        li
+                            b Task management:
+                            | GitHub Projects, Jira, Trello
+                    .col
+                        li
+                            b Monitoring:
+                            | Prometheus, Grafana, Zabbix
+                        li
+                            b Documentation:
+                            | Confluence, GitLab / GitHub Wiki, Notion
+                        li
+                            b Virtualisation:
+                            | Proxmox, VMware
+                        li
+                            b Programming:
+                            | Python, Go, Bash, PHP
+                        li
+                            b Practice:
+                            | DevOps/DevSecOps, DocOps, IaC, ChatOps
+            hr.mt-5
+            // Section with Education
+            .text-left#education
+                h2.mb-3 Education
+                .row
+                    .col
+                        h3.mb-0
+                            a(href="http://en.sstu.ru", target="_blank") SSTU named after Yuri Gagarin
+                        .subheading.mb-2 Software Engineer
+                        p Applied Informatics and Technologies - Information Systems and Technologies
+                        .subheading.mb-2.text-end August 2007 - May 2008
+            hr.mt-5
+            // Section with Experience
+            .text-left#experience
+                h2.mb-3 Experience
+                .row.mb-3
+                    h3.mb-0 SRE
+                    .subheading.mb-2.text-end
+                        b March 2022 – Now
+                    p.lead.mb-2
+                        a(href='https://bank.yandex.ru', target="_blank")
+                            b "Yandex.Bank"
+                    p
+                        | I'm building a fintech infrastructure in Yandex.Bank.
+                    p
+                        i Ansible, Terraform, Yandex.Cloud, Python, Go
+                .row.mb-3
+                    h3.mb-0 SRE
+                    .subheading.mb-2.text-end
+                        b March 2021 – February 2022
+                    p.lead.mb-2
+                        a(href='https://vk.company/en/', target="_blank")
+                            b "VK" (earlier Mail.ru Group)
+                    p
+                        | Worked on the project "Search". Reduced the total number of errors made when working with the SaltStack repository by adding various kinds of checks for SaltStack. Cleaned the infrastructure repository from linter errors - >10k "HIGH" level errors in >3k SLS files. Globally, a lot of internal self-written products are used, the names of which do not leave the company. The total number of servers in the area of responsibility of the SRE team is 5000 bare-metal servers. Bare-metal infrastructure. LXC, Docker and self-written services are also used. He was engaged in the support of high-load services within the framework of the project.
+                    p
+                        i SaltStack, Python, Linux, Gitlab CI
+                .row.mb-3
+                    h3.mb-0 DevOps
+                    .subheading.mb-2.text-end
+                        b January 2021 - July 2021
+                    p.lead.mb-2
+                        b NDA
+                    p
+                        | Project work. Helped the development team in the refinement and optimization of CI/CD. Moved the project from its own bare-metal infrastructure to DigitalOcean Managed Kubernetes. Designed and deployed the Production contour in DigitalOcean using Terraform. The configuration of servers and services was implemented using Ansible. All automation developments are left to the development team.
+                    p
+                        i Ansible, Prometheus, Grafana, Gitlab CI
+                .row.mb-3
+                    h3.mb-0 Senior System Administrator
+                    .subheading.mb-2.text-end
+                        b October 2019 - February 2021
+                    p.lead.mb-2
+                        a(href="http://advwe.com", target="_blank")
+                            b "ADV" LLC
+                    p
+                        | Implemented practices for documenting processes/changes/configurations, as well as updated project documentation. Implemented the IAC methodology. Implemented a template repository with a description of the infrastructure for a typical e-comm project of the company on Ansible and the "buttons" to launch automation via GitLab CI. Designed and launched the project infrastructure <a href="http://sammybeauty.ru ", target="_blank">"SammyBeauty"</a>. The platform withstood about 75k unique users and more than 225rps in the first hour of launch. He single-handedly implemented the "Big-Green-Button" internal project: a template repository with ansible playbooks and roles (roles are stored in the internal GitLab and connected as dependencies via Galaxy) to deploy projects similar to the above from scratch. The deployment takes place by "pressing a button in the web interface" of GitLab. Implemented Terraform to manage virtual machines on the Proxmox internal virtualization system.
+                    p
+                        i Ansible/Terraform, Zabbix/Prometheus, Grafana, Gitlab CI
+                .row.mb-3
+                    h3.mb-0 Senior Linux Systems Support Engineer
+                    .subheading.mb-2.text-end
+                        b June 2018 - October 2019
+                    p.lead.mb-2
+                        a(href='http://7pro.ru', target="_blank")
+                            b "SevenPro" LLC / "RegionCom" LLC
+                .row.mb-3
+                    h3.mb-0 System Administrator
+                    .subheading.mb-2.text-end
+                        b January 2018 - June 2018
+                    p.lead.mb-2
+                        a(href='http://webkontrol.com', target="_blank")
+                            b "WebKontrol" LLC
+                .row.mb-3
+                    h3.mb-0 System Administrator
+                    .subheading.mb-2.text-end
+                        b August 2017 - January 2018
+                    p.lead.mb-2
+                        a(href='https://www.moireis.ru/', target="_blank")
+                            b CJSC "ALLIANCE-TRAVEL"
+                .row.mb-3
+                    h3.mb-0 System Administrator
+                    .subheading.mb-2.text-end
+                        b April 2017 - June 2017
+                    p.lead.mb-2
+                        b LLC "I-group"
+                .row.mb-3
+                    h3.mb-0 Assistant System Administrator / System Administrator / Head of IT Department
+                    .subheading.mb-2.text-end
+                        b May 2014 - March 2017
+                    p.lead.mb-2
+                        b LLC "Argosy Analytics"
+            hr.mt-5
+            // Section with Awards
+            .text-left#awards
+                h2.mb-3 Awards
+                .row.mb-0
+                    .col
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/101471364", target="_blank").lead
+                                | Linux OS Admninistration
+                        li
+                            a(href="https://learn.epam.com/detailsPage?id=601f195a-d408-4439-a16d-0630ed2a412e", target="_blank").lead
+                                | Version Control with Git
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/100880600", target="_blank").lead
+                                | Linux OS
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/00215146", target="_blank").lead
+                                | Basics of local networks
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/100880577", target="_blank").lead
+                                | Analysis and risk management in information systems based on MS OS
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/00178706", target="_blank").lead
+                                | Basics of JavaScript
+                    .col
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/00181746", target="_blank").lead
+                                | Basics of CSS
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/100880561", target="_blank").lead
+                                | IT in management (Certification)
+                        li
+                            a(href="https://www.datacamp.com/courses/free-introduction-to-r", target="_blank").lead
+                                | Introduction to R
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/101068636", target="_blank").lead
+                                | Information security
+                        li
+                            a(href="https://intuit.ru/verifydiplomas/100907833", target="_blank").lead
+                                | Network Security
+                        li
+                            a(href="https://slurm.io/kubernetes-baza", target="_blank").lead
+                                | "Slurm-2": Intensive Kubernetes administration
+            hr.mt-5
+        // Page Footer
+        .container#footer.mb-5.mt-3
+
+                .row
+                    .col
+                        p.text-start 2022 &copy; All rights reserved
+                    .col
+                        p.text-end  Michael Savin aka jtprogru
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js")
+
+
+
