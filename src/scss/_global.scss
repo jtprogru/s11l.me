@@ -5,7 +5,7 @@ body {
 
 @include media-breakpoint-up(lg) {
     body {
-        padding-top: 0px;
+        padding-top: 6rem;
     }
 }
 
@@ -16,7 +16,8 @@ h4,
 h5,
 h6 {
     text-transform: lowercase;
-    padding-top: 120px;
+    padding-top: 3rem;
+    color: $gray600;
 }
 
 h1 {
@@ -26,12 +27,18 @@ h1 {
 
 p.lead {
     font-size: 1.15rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
+li,
 p {
-    color: $graya;
+    color: $grayc;
     font-size: 1rem;
+    font-weight: 400;
+}
+
+li b {
+    color: $grayc;
 }
 
 a {
@@ -42,3 +49,6 @@ a:hover {
     color: $grayf;
 }
 
+h1 span.text-family {
+    color: $secondary !important;
+}
