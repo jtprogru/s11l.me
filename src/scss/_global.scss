@@ -1,11 +1,16 @@
+//
+// Global
+//
+
 body {
-    background-color: $personal;
-    color: $grayc;
+    padding-top: $navbar-base-height;
+    color: $gray800;
 }
 
 @include media-breakpoint-up(lg) {
     body {
-        padding-top: 6rem;
+        padding-top: 0;
+        padding-left: $sidebar-base-width;
     }
 }
 
@@ -15,40 +20,26 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: lowercase;
-    padding-top: 3rem;
-    color: $gray600;
+    text-transform: uppercase;
 }
 
 h1 {
-    color: $grayc;
     line-height: 1;
 }
 
 p.lead {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-li,
 p {
-    color: $grayc;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-li b {
-    color: $grayc;
-}
-
-a {
-    color: $graya;
-}
-
-a:hover {
-    color: $grayf;
-}
-
-h1 span.text-family {
-    color: $secondary !important;
+.subheading {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
