@@ -50,6 +50,7 @@ start-debug:
 ## Clean all artifacts
 clean:
 	rm -rf dist/*
+	rm -rf node_modules/
 
 .PHONY: help
 ## Show this help message
